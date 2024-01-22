@@ -1,0 +1,59 @@
+.about-us-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+        padding-top: 10px;
+    }
+
+    &-content {
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &-image {
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        width: 35px;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 45%;
+            width: 60px;
+            height: 1px;
+            background: url(../../assets/icons/line.png) no-repeat;
+            background-size: cover;
+            background: #000;
+        }
+
+        img {
+            width: 29.302px;
+            height: 29.302px;
+        }
+
+        &::before {
+            left: -85px;
+        }
+
+        &::after {
+            right: -85px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        padding-top: 40.7px;
+
+        p {
+            padding-bottom: 20px;
+        }
+    }
+
+}

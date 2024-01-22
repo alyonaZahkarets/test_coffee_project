@@ -1,0 +1,30 @@
+.our-best-item {
+    width: 220px;
+    height: 240px;
+    padding: 22px 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.card-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+
+    &__content {
+        &-title {
+            padding-bottom: 10px;
+        }
+
+        &-img {
+            padding-bottom: 14px;
+        }
+
+        &-price {
+            color: black;
+            font-size: 12px;
+        }
+    }
+}
