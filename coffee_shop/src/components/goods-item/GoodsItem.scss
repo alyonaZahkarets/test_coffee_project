@@ -1,0 +1,19 @@
+.goods-item {
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    &__content {
+        .cards-list {
+            flex-wrap: wrap;
+            padding: 0px 200px;
+
+            .card-list-item {
+                filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+
+    .none {
+        display: none;
+    }
+}

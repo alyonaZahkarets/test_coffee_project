@@ -1,0 +1,142 @@
+@import "./variables";
+@import "./mixins";
+
+
+// @font-face {
+//     font-family: 'Merienda Regular';
+//     font-style: normal;
+//     src: url('../font/merienda/Merienda-Regular.ttf') format('truetype');
+//     font-weight: 400;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: 'Merienda Bold';
+//     font-style: normal;
+//     src: url('../font/merienda/Merienda-Bold.ttf') format('truetype');
+//     font-weight: 700;
+//     font-display: swap;
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', sans-serif;
+    max-width: 100%;
+}
+
+
+body {
+    font-family: 'Merienda', sans-serif;
+}
+
+html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+}
+
+ul,
+li,
+dl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+
+    @media (max-width: 1240px) {
+        width: 970px;
+    }
+
+    @media (max-width: 992px) {
+        width: 720px;
+    }
+
+    @media (max-width: 767px) {
+        width: 540px;
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+.fz_40 {
+    font-family: 'Merienda', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @media (max-width: 992px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 25px
+    }
+
+    @media (max-width: 576px) {
+        font-size: 25px;
+        padding-bottom: 6px;
+    }
+}
+
+.fz_24 {
+    text-align: center;
+    font-family: 'Merienda', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fz_14 {
+    text-align: center;
+    font-family: 'Merienda', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fz_12 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Merienda', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,49 @@
+.about-it-list-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    justify-content: center;
+    gap: 42px;
+
+    &__img {}
+
+    &__content {
+        width: 418px;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 16px;
+
+            span {
+                font-weight: 700;
+                font-size: 14px;
+            }
+
+            .price {
+                padding-right: 8px;
+            }
+
+            .fz_14 {
+                text-align: left;
+            }
+
+            &-price {
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+    .about-it {
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .about-us-list__item-content {
+        display: none;
+    }
+}
