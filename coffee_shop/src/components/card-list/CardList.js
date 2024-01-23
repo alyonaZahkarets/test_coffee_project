@@ -6,7 +6,9 @@ const CardList = ({ cardsData, displayMode }) => {
   let visibleCards = [];
 
   if (displayMode === "firstThree") {
-    visibleCards = cardsData.slice(0, 3);
+    visibleCards = cardsData
+      .slice(0, 3)
+      .map((item) => ({ ...item, country: undefined }));
   } else if (displayMode === "all") {
     visibleCards = cardsData;
   } else if (displayMode === "excludeFirstThree") {

@@ -28,6 +28,12 @@ const AboutUs = ({ filter }) => {
       description2:
         "Afraid at highly months do things on at. Situation recommend objection do intention so questions. As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.",
     },
+    {
+      id: "4",
+      title: "About It",
+      description1: "",
+      description2: "",
+    },
   ];
 
   const getFilteredAbout = () => {
@@ -37,8 +43,10 @@ const AboutUs = ({ filter }) => {
       filteredData = data.slice(0, 1);
     } else if (filter === "secondAbout") {
       filteredData = data.slice(1, 2);
-    } else {
+    } else if (filter === "thirdAbout") {
       filteredData = data.slice(2, 3);
+    } else {
+      filteredData = data.slice(3, 4);
     }
 
     return filteredData;
@@ -51,7 +59,7 @@ const AboutUs = ({ filter }) => {
 
   return (
     <div className="">
-      <ul className="about-us-list">{aboutDataElements}</ul>
+      <ul className="about-us-list about-it">{aboutDataElements}</ul>
     </div>
   );
 };
