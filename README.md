@@ -13,8 +13,7 @@ This project is a simple web application that allows you to browse a list of cof
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contribution](#contribution)
-- [License](#license)
+
 
 ## Installation
 
